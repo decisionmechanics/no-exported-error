@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import * as MY_CONSTANTS_WILDCARD from "./constants";
+import { MY_CONSTANTS } from "./imports";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <ul>
+    <li>Andrew is {MY_CONSTANTS_WILDCARD.Andrew}</li>
+    <li>Bob is {MY_CONSTANTS.Andrew}</li>
+    <li>Bob is {MY_CONSTANTS.Bob}</li>
+  </ul>
+);
 
 export default App;
